@@ -1,6 +1,13 @@
-/*Solicite ao usuário uma sequência de números separados por espaço e exiba quantos números
-foram digitados.*/
+//Peça ao usuário que digite o seu nome e verifique se ele contém mais de 5 caracteres.
 
-let numero = [
-    
-]
+
+const nome = prompt("Digite seu Nome: ")
+const caracteres = nome.length
+
+if (caracteres > 5) {
+    alert(`${nome} seu nome tem mais que 5 caracteres`)
+} else {
+    alert(`${nome} seu nome tem 5 ou menos caracteres`)
+}
+
+

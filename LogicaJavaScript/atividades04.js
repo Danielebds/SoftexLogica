@@ -91,3 +91,98 @@ const sobrenome = prompt("Digite seu Sobrenome: ")
 
 alert (`-- ${nome} ${sobrenome}`);
 
+/*Solicite ao usuário uma sequência de números separados por espaço e exiba quantos números
+foram digitados.*/
+
+
+let sequencia = prompt("Digite uma sequência de números separados por espaço:");
+
+
+let num = sequencia.split(" ");
+console.log(num)
+
+
+let quantNum = num.length;
+
+
+alert(`Foram digitados ${quantNum} Números.`);
+
+
+/*Receba o nome de um animal digitado pelo usuário e exiba uma mensagem informando qual
+animal foi digitado.*/
+
+let animal = prompt("Digite o nome de um animal: ");
+
+alert(`Você digitou o animal: ${animal}`);
+
+/*Peça ao usuário que digite o seu nome e o seu sobrenome. Em seguida, exiba o nome completo
+invertido (sobrenome, nome).*/
+
+
+let nome = prompt("Digite seu Nome: ")
+let sobrenome = prompt ("Digite seu Sobrenome")
+
+
+alert(`-- ${sobrenome} ${nome} -- `)
+
+//Receba uma string digitada pelo usuário e imprima o seu tamanho (número de caracteres)
+
+const string = prompt("Digite uma palavra: ")
+
+alert(`-- A quantidade de Caractes é ${string.length} --`)
+
+//Solicite ao usuário um número inteiro e exiba se ele é par ou ímpar.
+
+let numeroInt =parseInt (prompt("Digite um numero Inteiro: "));
+
+if (Number(numeroInt) % 2 == 0) {
+   alert(`Seu numero ${numeroInt} é par`)
+} else {
+    alert(`Seu numero ${numeroInt} é ímpar`)
+}
+
+//Receba um número inteiro digitado pelo usuário e verifique se ele é positivo ou negativo.
+
+const numeroInteiro = parseInt (prompt("Digite um número inteiro: "));
+
+if (Number(numeroInteiro) >= 0) {
+    
+    alert(`Seu número ${numeroInteiro} é Positivo`)
+} else  {
+    alert(`Seu número ${numeroInteiro} é  Negativo`)
+}
+//Peça ao usuário que insira dois números e exiba o maior deles.
+
+
+let numero1 = prompt("Digite um número: ")
+let numero2 = prompt("Digite um segundo número: ")
+
+if (Number(numero1) > Number(numero2)) {
+    alert(`O numero ${numero1} é maior que o número ${numero2}`)
+} else if (Number(numero2) > Number(numero1)) {
+    alert(`O numero ${numero2} é maior que o número ${numero1}`)
+    
+} else {
+    alert(`Os números são iguais`)
+
+/*Receba a altura e o peso de uma pessoa digitados pelo usuário. Em seguida, calcule o seu índice de
+massa corporal (IMC) utilizando a fórmula: IMC = peso / (altura * altura) e exiba o resultado.*/
+let altura = parseFloat(prompt("Digite a sua altura :"));
+let peso = parseFloat(prompt("Digite o seu peso :"));
+
+
+let imc = peso / (altura * altura);
+
+alert(`Seu IMC é: ${imc.toFixed(4)}`);
+
+//Peça ao usuário que digite o seu nome e verifique se ele contém mais de 5 caracteres.
+
+
+const nome = prompt("Digite seu Nome: ")
+const caracteres = nome.length
+
+if (caracteres > 5) {
+    alert(`${nome} seu nome tem mais que 5 caracteres`)
+} else {
+    alert(`${nome} seu nome tem 5 ou menos caracteres`)
+}
