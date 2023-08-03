@@ -7,7 +7,7 @@ let soma = nota1 + nota2
 let media = soma / 2
 
 if (media >= 7) {
-    console.log("APROVADO")
+    alert("APROVADO")
 } else {
-    console.log("REPROVADO")
+    alert("REPROVADO")
 }
