@@ -1,13 +1,8 @@
-//Peça ao usuário que digite o seu nome e verifique se ele contém mais de 5 caracteres.
+/*Peça ao usuário que digite uma temperatura em graus Celsius e a converta para Fahrenheit usando
+a fórmula: Fahrenheit = (Celsius * 9/5) + 32. */
 
+let tGrausCelsius = Number(prompt("Digite uma temperature em Graus Celsius: "))
 
-const nome = prompt("Digite seu Nome: ")
-const caracteres = nome.length
+let tFahrenheit = (tGrausCelsius * (9/5)) + 32
 
-if (caracteres > 5) {
-    alert(`${nome} seu nome tem mais que 5 caracteres`)
-} else {
-    alert(`${nome} seu nome tem 5 ou menos caracteres`)
-}
-
-
+console.log(`Temperatura em Fahrenheit: ${tFahrenheit}°F`)
