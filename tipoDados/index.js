@@ -1,4 +1,4 @@
-const nome =(prompt("Digite seu nome: "))
+const nome =toStringz(prompt("Digite seu nome: "))
 
 alert(`Bem vinda ${nome}`)
 
@@ -9,11 +9,11 @@ let altura = parseFloat(prompt("Digite sua altura: "))
 
 alert(`${nome} tem ${altura} altura`)
 
-let maiorDeidade = (idade)
+let maiorDeidade = Boolean(idade)
 
-if (maiorDeidade >18) {
+if (maiorDeidade > 18) {
     alert(`${nome} é maior de idade`)
-} else if (maiorDeidade <18) {
+} else if (maiorDeidade < 18) {
     alert(`${nome} é menor de idade`);
 }
 
