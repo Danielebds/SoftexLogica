@@ -77,3 +77,17 @@ if (nome1.length > nome2.length) {
     alert(`O nome ${nome2} possui o maiort número de caracteres`)
 }
 //Desenvolva um programa que leia um caractere e verifique se ele é uma vogal ou uma consoante.
+
+var caractere = prompt("Digite um caractere:").toLowerCase();
+
+
+if (caractere.match(/[a-z]/i)) {
+    
+    if (caractere === "a" || caractere === "e" || caractere === "i" || caractere === "o" || caractere === "u") {
+        console.log("O caractere é uma vogal.");
+    } else {
+        console.log("O caractere é uma consoante.");
+    }
+} else {
+    console.log("O caractere não é uma letra do alfabeto.");
+}
