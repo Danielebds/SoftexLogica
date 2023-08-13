@@ -1,28 +1,40 @@
-/*Crie um programa que leia uma sequência de números inteiros do usuário e exiba a média dos
-números digitados. O programa deve parar de ler quando o usuário digitar o número -1 utilizando
-o while.*/
-
-let numero;
-let soma = 0;
-let quantidade = 0;
+let primeiroNumero;
+let ultimoNumero;
+let pares = 0;
+let impares = 0;
 
 while (true) {
-  numero = parseInt(prompt("Digite um número (-1 para parar):"));
+  const numero = parseInt(prompt('Digite um número inteiro (0 para parar):'));
 
-  if (numero === -1) {
+  if (numero === 0) {
     break;
   }
 
-  soma += numero;
-  quantidade++;
+  if (primeiroNumero === undefined) {
+    primeiroNumero = numero;
+  }
+
+  ultimoNumero = numero;
+
+  if (numero % 2 === 0) {
+    pares++;
+  } else {
+    impares++;
+  }
 }
 
-if (quantidade > 0) {
-  const media = soma / quantidade;
-  console.log(`A média dos números digitados é: ${media}`);
-} else {
-  console.log("Nenhum número foi digitado.");
-}
+console.log(`Quantidade de números pares entre ${primeiroNumero} e ${ultimoNumero}: ${pares}`);
+console.log(`Quantidade de números ímpares entre ${primeiroNumero} e ${ultimoNumero}: ${impares}`);
+
+
+
+
+
+
+
+
+
+
 
 
 
