@@ -172,6 +172,7 @@ Desenvolva uma função chamada "contarDigitosParesImpares" que receba um númer
 como parâmetro e retorne a quantidade de dígitos pares e a quantidade de dígitos ímpares
 presentes nesse número.*/
 
+
 function contarDigitosParesImpares(numero) {
     let numeroStr = numero.toString();
     let digitosPares = 0;
@@ -189,11 +190,13 @@ function contarDigitosParesImpares(numero) {
     return { digitosPares, digitosImpares };
 }
 
-// Exemplo de uso da função:
-const numero = 1234567;
-const resultado = contarDigitosParesImpares(numero);
-console.log(`Quantidade de dígitos pares: ${resultado.digitosPares}`);
-console.log(`Quantidade de dígitos ímpares: ${resultado.digitosImpares}`);
+let num = parseInt(prompt("Digite um número: "))
+
+let resultado = contarDigitosParesImpares(num)
+
+alert(`Digitos pares ${resultado.digitosPares}, Digitos impares ${resultado.digitosImpares}`)
+
+
 
 /*
 Crie uma função chamada "calcularMediaAlunos" que receba uma lista de alunos, onde cada aluno
@@ -218,11 +221,11 @@ function calcularMediaAlunos(listaAlunos) {
     return media;
 }
 
-// Exemplo de uso da função:
+
 const alunos = [
-    { nome: 'Alice', nota: 8 },
-    { nome: 'Bob', nota: 9 },
-    { nome: 'Carol', nota: 7 },
+    { nome: 'joana', nota: 8 },
+    { nome: 'lucia', nota: 9 },
+    { nome: 'fernarda', nota: 7 },
 ];
 
 const mediaTurma = calcularMediaAlunos(alunos);
@@ -432,7 +435,7 @@ function pessoaMaisVelha(pessoas) {
 
 const pessoas = [
     { nome: 'Alice', idade: 30 },
-    { nome: 'Bob', idade: 25 },
+    { nome: 'João', idade: 25 },
     { nome: 'Eva', idade: 40 }
 ];
 
